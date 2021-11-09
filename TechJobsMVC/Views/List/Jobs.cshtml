@@ -16,19 +16,19 @@
             </tr>
             <tr>
                 <td>Employer: </td>
-                <td>@job.Employer</td>
+                <td><a asp-controller="List" asp-action="Jobs" asp-route-column="employer" asp-route-value="@job.Employer">@job.Employer</a></td>
             </tr>
             <tr>
                 <td>Location: </td>
-                <td>@job.Location</td>
+                <td><a asp-controller="List" asp-action="Jobs" asp-route-column="location" asp-route-value="@job.Location">@job.Location</a></td>
             </tr>
             <tr>
                 <td>Position Type: </td>
-                <td>@job.PositionType</td>
+                <td><a asp-controller="List" asp-action="Jobs" asp-route-column="positionType" asp-route-value="@job.PositionType">@job.PositionType</a></td>
             </tr>
             <tr>
                 <td>Skill: </td>
-                <td>@job.CoreCompetency</td>
+                <td><a asp-controller="List" asp-action="Jobs" asp-route-column="coreCompetency" asp-route-value="@job.CoreCompetency">@job.CoreCompetency</a>y</td>
             </tr>
         </table>}
         
